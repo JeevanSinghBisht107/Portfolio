@@ -3,10 +3,13 @@ import myImage from "../../assets/MyImage.jpg";
 
 const Home = () => {
   return (
-    <div className="text-white flex w-full justify-between items-start p-10 md:p-20">
+    <div className=" flex flex-col gap-8 md:flex md:flex-row text-white flex w-full justify-between items-start p-10 md:p-20">
+      <div>
+        <img className="ml-4 h-60 w-60  md:h-96 md:w-96 rounded-full" src={myImage} width={10} height={10} />
+      </div>
       <div className="md:w-2/4 md:pt-10">
         <h1 className="text-3xl md:text-6xl font-bold flex leaading-normal tracking-tighter">
-          Hello' I am Jeevan
+          Hello, I am Jeevan
         </h1>
         <p className="text-sm md:text-2xl tracking-tight mb-10">
           A passionate web developer with experience in building full-stack web
@@ -17,9 +20,7 @@ const Home = () => {
           View CV
         </a>
       </div>
-      <div>
-        <img className="h-96 rounded-full" src={myImage} />
-      </div>
+      
     </div>
   );
 }; 
